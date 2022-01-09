@@ -1,0 +1,208 @@
+body {
+	margin: 0;
+	background: #fffdfd;
+    overflow-x: hidden;
+	background: url(../img/bg.jpg);
+			background-attachment: fixed;
+			background-size: 100%;
+}
+@font-face{font-family:electronicFont;src:url(../font/DS-DIGIT.TTF)}
+.canvas{position: absolute; width:100%; left: 0; top: 0; height: 99%; z-index: 3;}
+.map{  position:relative; height: 7.2rem; z-index: 9;}
+/*.map4{ width: 200%; height:7rem;  position: relative; left: -50%; top: 4%; margin-top: .2rem; z-index: 5;}*/
+.map1,.map2,.map3{ position:absolute; opacity: .5}
+.map1{ width:60%; top:.45rem; left: 20%;  animation: myfirst2 15s infinite linear;z-index:2;}
+.map2{ width:5.66rem; top:.85rem; left:1.2rem; z-index: 2; opacity: 0.2; animation: myfirst 10s infinite linear;}
+/*.head{ height:1.05rem; background: url(../img/head_bg.png) no-repeat center center; background-size: 100% 100%; position: relative; z-index: 100;}*/
+#title {
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	top: 0;
+	left: 30%;
+	/* background: #666666; */
+	color: white;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index:10;
+}
+#head {
+	position: absolute;
+	top: 0;
+	z-index:100;
+	background: url(../img/head_bg.png);
+			background-attachment: fixed;
+			background-size: 100%;
+}
+#title1 {
+	position: absolute;
+	height: 10%;
+	left: 3%;
+	top: 5%;
+	color: #edffe3;
+	font-size: 16px;
+	z-index:10;
+}
+
+#time {
+	position: absolute;
+	/* width: 30%; */
+	height: 10%;
+	right: 3%;
+	top: 5%;
+	color: #edffe3;
+	font-size: 16px;
+}
+
+#c1 {
+	position: absolute;
+	width: 39.5%;
+	height: 15%;
+	top: 10%;
+	left: 1%;
+	color: white;
+	background:rgba(19,31,64,.32);
+    box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2);
+	z-index:10;
+}
+
+.num {
+	width: 25%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: gold;
+	font-size: 15px;
+	z-index:10;
+	/*margin-top: 20px;*/
+}
+
+.txt {
+	width: 25%;
+	float: left;
+	font-family: "幼圆";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index:10;
+}
+.txt h2 {
+	margin: 0;
+}
+
+
+#c2 {
+	position: absolute;
+	width: 58%;
+	height: 90%;
+	top: 10%;
+	right: 1%;
+	z-index:10;
+	/*border-top-style:groove;*/
+    /*border-right-style:groove;*/
+    /*border-bottom-style:groove;*/
+    /*border-left-style:groove;*/
+	box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2);
+}
+
+#l1 {
+	position: absolute;
+	width: 39.5%;
+	height: 35%;
+	top: 26%;
+	left: 1%;
+	z-index:10;
+	/*background:rgba(200, 100, 100, 0.5);*/
+	/*boder-top:10px solid #000000*/
+	background:rgba(19,31,64,.32);
+	/*background: #fffdfd;*/
+	/*border-top-style:groove;*/
+    /*border-right-style:none;*/
+    /*border-bottom-style:groove;*/
+    /*border-left-style:groove;*/
+    box-shadow: 0px 2px 14px rgba(255,0,0,0.2);
+}
+
+#l2 {
+	position: absolute;
+	width: 39.5%;
+	height: 38%;
+	top: 62%;
+	left: 1%;
+	z-index:10;
+	background:rgba(19,31,64,.32);
+	/*border-top-style:groove;*/
+    /*border-right-style:none;*/
+    /*border-bottom-style:groove;*/
+    /*border-left-style:groove;*/
+    box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2);
+}
+/*国外top10*/
+#r1 {
+	position: absolute;
+	width: 27.5%;
+	height: 40%;
+	top: 101%;
+	right: 1%;
+	z-index:10;
+	background:rgba(19,31,64,.32);
+	/*border-top-style:none;*/
+    /*border-right-style:groove;*/
+    /*border-bottom-style:groove;*/
+    /*border-left-style:groove;*/
+    box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2);
+}
+
+/*#r2 {*/
+	/*position: absolute;*/
+	/*width: 30%;*/
+	/*height: 37%;*/
+	/*top: 48%;*/
+	/*right: 0%;*/
+	/*background: #fffdfd;*/
+/*}*/
+/*#r3{*/
+	/*position: absolute;*/
+	/*width: 30%;*/
+	/*height: 15%;*/
+	/*top: 85%;*/
+	/*right: 1%;*/
+	/*background: #fffdfd;*/
+	/*text-align: center;*/
+/*}*/
+#beimei {
+	position: absolute;
+	width: 70%;
+	height: 40%;
+	top: 101%;
+	left: 1%;
+	z-index:10;
+	/*boder-top:10px solid #000000*/
+	background:rgba(19,31,64,.32);
+	/*border-top-style:none;*/
+    /*border-right-style:groove;*/
+    /*border-bottom-style:groove;*/
+    /*border-left-style:groove;*/
+    box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2);
+}
+ /*此处是设置自动匹配横屏，以适应手机显示 */
+@media screen and (max-width: 639px) {
+
+  }
+/*@media screen and (orientation: landscape) {*/
+    /*html{*/
+        /*width : 100vmax;*/
+        /*height : 100vmin;*/
+    /*}*/
+    /*body{*/
+        /*width : 100vmax;*/
+        /*height : 100vmin;*/
+    /*}*/
+    /*#gyroContain{*/
+        /*width : 100vmax;*/
+        /*height : 100vmin;*/
+    /*}*/
+/*}*/
